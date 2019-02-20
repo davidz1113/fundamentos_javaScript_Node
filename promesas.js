@@ -45,7 +45,7 @@ let getSalario = (empleado) => {
         if (!findSalario) {
             reject(`No se encontro un salario para el usuario ${empleado.nombre} `)
         } else {
-            reject({ nombre: empleado.nombre, salario: findSalario.salario });
+            resolve({ nombre: empleado.nombre, salario: findSalario.salario });
         }
 
     });
